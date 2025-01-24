@@ -70,7 +70,7 @@
     }).reduce((a, b) => {
         return a + b;
     }))
-    $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1">与</span> ${config.names[1]}<span class="STYLE1">已经相恋了</span>`)
+    $("#clock-box-inside-text").html(`${config.names[0]}<span class="STYLE1"></span> ${config.names[1]}<span class="STYLE1"></span>`)
 </script>
 
 <script>
@@ -185,7 +185,6 @@
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
 
-            // 会有闪烁不得意这样做, (＞﹏＜)
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
             canvas.css("background", "#ffe");
             $await(Jscex.Async.sleep(300));
