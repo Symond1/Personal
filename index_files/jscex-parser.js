@@ -1,7 +1,6 @@
 
 (function () {
 
-/* -----[ Tokenizer (constants) ]----- */
 
 var KEYWORDS = array_to_hash([
         "break",

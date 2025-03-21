@@ -8,7 +8,7 @@
     var stringify = (typeof JSON !== "undefined" && JSON.stringify) ?
         function (s) { return JSON.stringify(s); } :
         (function () {
-            // Implementation comes from JSON2 (http://www.json.org/js.html)
+            
         
             var escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
             
@@ -23,10 +23,7 @@
             }
             
             return function (s) {
-                // If the string contains no control characters, no quote characters, and no
-                // backslash characters, then we can safely slap some quotes around it.
-                // Otherwise we must also replace the offending characters with safe escape
-                // sequences.
+                
 
                 escapable.lastIndex = 0;
                 return escapable.test(s) ? '"' + s.replace(escapable, function (a) {
