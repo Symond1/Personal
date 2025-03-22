@@ -1,5 +1,5 @@
 var config = {
-  names: ["Vishwas", "Avis"],
+  names: ["you and your partner name"],
   date: "2023/01/01", // Replace with your anniversary date
   lines: [
     "The first time I saw you in class, my heart skipped a beat, and your smile was breathtaking. ❤️🌹",
